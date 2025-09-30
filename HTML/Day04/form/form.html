@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang trí Form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="form">
+      <form>
+        <!-- Thông Tin cá nhân -->
+        <fieldset>
+          <legend>Thông Tin Cá Nhân</legend>
+          <label for="title">Tước vị:</label>
+          <select name="title" id="title">
+            <option value="mr">Ông</option>
+            <option value="mrs">Bà</option>
+            <option value="brother">Anh</option>
+            <option value="sister">Chị</option>
+            <option value="young_sister">Em</option>
+          </select>
+
+          <label for="name">Họ tên:</label>
+          <input type="text" id="name" name="name" />
+
+          <label for="day">Ngày sinh:</label>
+          <input type="date" id="day" name="day" />
+
+          <label for="time">Giờ sinh:</label>
+          <input type="time" id="time" name="time" />
+
+          <label>Giới tính:</label>
+          <input type="radio" id="Giới tính" /><span>Nam</span>
+          <input type="radio" id="Giới tính" /><span>Nữ</span>
+
+          <label for="">Sở Thích:</label>
+          <input type="checkbox" id="hobbies" /><span>Thể Thao</span>
+          <input type="checkbox" id="hobbies" /><span>Du Lịch</span>
+          <input type="checkbox" id="hobbies" /><span>Ẩm Thực</span>
+          <label for="">&nbsp;</label>
+          <input type="checkbox" id="hobbies" /><span>Âm Nhạc</span>
+          <input type="checkbox" id="hobbies" /><span>Học Ngoại Ngữ</span>
+          <input type="checkbox" id="hobbies" /><span>Kinh Doanh</span>
+        </fieldset>
+
+        <!-- Thông Tin Liên Hệ -->
+        <fieldset>
+          <legend>Thông Tin Liên Hệ</legend>
+
+          <label for="">Điện thoại:</label>
+          <input type="tel" id="phone" name="phone" />
+
+          <label for="">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="ví dụ: gacon@gmail.com"
+          />
+
+          <label for="Website">Website:</label>
+          <input type="url" id="Website" name="Website" />
+
+          <label>Mã tỉnh:</label>
+          <input type="number" id="areacode" name="areacode" />
+
+          <label>Địa chỉ:</label>
+          <textarea name="address" id="address" cols="50" rows="3"></textarea>
+        </fieldset>
+
+        <!-- Chỉ số sức khỏe -->
+        <fieldset>
+          <legend>Chỉ Số Sức Khỏe</legend>
+          <label for="">Chiều cao(cm):</label>
+          <input type="number" id="chieucao" name="chieucao" />
+
+          <label for="">Cân nặng[45kg-100kg]:</label>
+          <input type="range" id="cannang" name="cannang" min="45" max="100" />
+
+          <label for="heart">Nhịp tim [60-100 nhịp/phút]:</label>
+          <meter value="90" min="60" max="100"></meter>
+        </fieldset>
+
+        <!-- Giấy tờ cá nhân -->
+        <fieldset>
+          <legend>Giấy Tờ Cá Nhân</legend>
+          <label for="">Tài liệu:</label>
+          <input type="file" id="tailieu" name="tailieu" />
+
+          <label for="">Tải lên 30%:</label>
+          <progress value="30" max="100"></progress>
+        </fieldset>
+        <div id="button">
+          <button type="submit">Gửi</button>
+          <button type="reset">Hủy</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

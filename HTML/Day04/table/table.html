@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang trí table</title>
+  </head>
+  <style>
+    table {
+      border-collapse: collapse;
+      box-shadow: 10px 10px 10px gray;
+    }
+
+    tr,
+    th,
+    td {
+      border: 1px solid white;
+      padding: 6px;
+    }
+
+    tr > th {
+      background-color: darkblue;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: aqua;
+    }
+    tr:hover {
+      background-color: pink;
+    }
+  </style>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>HỌ VÀ TÊN</th>
+          <th>NĂM SINH</th>
+          <th>TỈNH THÀNH</th>
+          <th>Menu</th>
+        </tr>
+      </thead>
+
+      <tr>
+        <td>Nguyễn Văn Cường</td>
+        <td>2000</td>
+        <td>Hà Nội</td>
+        <td>&#43;|&#9998;|&#x1F5D1;</td>
+      </tr>
+      <tr>
+        <td>Trần Thị Nga</td>
+        <td>2002</td>
+        <td>Nghệ An</td>
+        <td>&#43;|&#9998;|&#x1F5D1;</td>
+      </tr>
+      <tr>
+        <td>Vũ Hữu Minh</td>
+        <td>2004</td>
+        <td>Cần Thơ</td>
+        <td>&#43;|&#9998;|&#x1F5D1;</td>
+      </tr>
+      <tr>
+        <td>Cao Thanh Lan</td>
+        <td>2003</td>
+        <td>Bến Tre</td>
+        <td>&#43;|&#9998;|&#x1F5D1;</td>
+      </tr>
+      <tr>
+        <td>Đoàn Văn Hậu</td>
+        <td>2002</td>
+        <td>Hà Nội</td>
+        <td>&#43;|&#9998;|&#x1F5D1;</td>
+      </tr>
+    </table>
+  </body>
+</html>

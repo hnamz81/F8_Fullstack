@@ -1,0 +1,59 @@
+.form{
+    border: 1px solid rgba(0, 0, 0, 0.485);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+fieldset {
+    position: relative;
+    background-color: lightgray;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+legend {
+    position: absolute;
+    top: -16px;
+    left: 10px;
+    font-weight: bold;
+   
+}
+
+label,input, span, textarea, meter, progress, select {
+    display: block;
+    float: left;
+    margin-bottom: 6px;
+}
+
+label{
+    clear: left;
+    width: 160px;
+    text-align: right;
+    margin-right: 10px;
+    
+}
+input[type="range"]{
+  accent-color: red;   
+  height: 6px;            
+}
+progress {
+  accent-color: red;   
+            
+}
+.button {
+    margin-left: 170px;
+    margin-top: 100px; 
+}
+button{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+}
+button:first-child {
+    background: chartreuse;
+}
+button:last-child {
+    background: red;
+}
